@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class Player : MonoBehaviour
 {
@@ -10,6 +12,13 @@ public class Player : MonoBehaviour
     private Vector3 movedirection;
     public float CameraSensitivity = 2.0f;
     private float yaw = 0.0f;
+    public Enemy enemy;
+    
+
+    private void Awake()
+    {
+       enemy = FindAnyObjectByType<Enemy>();
+    }
 
     private void Update()
     {
@@ -22,5 +31,26 @@ public class Player : MonoBehaviour
         //Ovaj dio kod brine od micanju kamere
         yaw += CameraSensitivity * Input.GetAxis("Mouse X");
         transform.eulerAngles = new Vector3(0.0f, yaw, 0.0f);
+    }
+
+    //Ova funkcija kontrolira pucanje neprijatelja
+    private void OnTriggerStay(Collider other)
+    {
+        if(other.CompareTag("Enemy"))
+        {
+            if(!other.CompareTag("Border"))
+            {
+                if(Input.GetMouseButtonDown(0))
+                {
+                    if(enemy.lives <= 0)
+                    {
+                        Destroy(enemy.gameObject);
+                    } else
+                    {
+                        enemy.lives--;
+                    }
+                }
+            }
+        }
     }
 }
