@@ -12,12 +12,11 @@ public class Player : MonoBehaviour
     private Vector3 movedirection;
     public float CameraSensitivity = 2.0f;
     private float yaw = 0.0f;
-    public Enemy enemy;
+    public int lives = 5;
     
 
     private void Awake()
     {
-       enemy = FindAnyObjectByType<Enemy>();
     }
 
     private void Update()
@@ -42,13 +41,7 @@ public class Player : MonoBehaviour
             {
                 if(Input.GetMouseButtonDown(0))
                 {
-                    if(enemy.lives <= 0)
-                    {
-                        Destroy(enemy.gameObject);
-                    } else
-                    {
-                        enemy.lives--;
-                    }
+                    other.gameObject.GetComponent<Enemy>().Hit();
                 }
             }
         }

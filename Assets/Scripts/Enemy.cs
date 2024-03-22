@@ -20,6 +20,15 @@ public class Enemy : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
     }
 
+    public void Hit()
+    {
+        lives--;
+
+        if(lives <= 0)
+        {
+            Destroy(this.gameObject);
+        } 
+    }
 
     //Ova funkcija sluzi za AI enemya, kada igrac ude u Collider enemy krene prema igracu
     private void OnTriggerStay(Collider other)
