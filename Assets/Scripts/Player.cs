@@ -30,20 +30,7 @@ public class Player : MonoBehaviour
         //Ovaj dio kod brine od micanju kamere
         yaw += CameraSensitivity * Input.GetAxis("Mouse X");
         transform.eulerAngles = new Vector3(0.0f, yaw, 0.0f);
-    }
 
-    //Ova funkcija kontrolira pucanje neprijatelja
-    private void OnTriggerStay(Collider other)
-    {
-        if(other.CompareTag("Enemy"))
-        {
-            if(!other.CompareTag("Border"))
-            {
-                if(Input.GetMouseButtonDown(0))
-                {
-                    other.gameObject.GetComponent<Enemy>().Hit();
-                }
-            }
-        }
+
     }
 }
