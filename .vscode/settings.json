@@ -52,5 +52,5 @@
         "Temp/": true
     },
     "dotnet.preferCSharpExtension": true,
-    "dotnet.defaultSolution": "Magic of the Egyptians.sln"
+    "dotnet.defaultSolution": "Magic-of-the-Egyptians.sln"
 }
