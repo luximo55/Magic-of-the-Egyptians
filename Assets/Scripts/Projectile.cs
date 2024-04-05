@@ -19,11 +19,11 @@ public class Projectile : MonoBehaviour
         Destroy(this.gameObject, timeToLive);
     }
     
-    private void OnTriggerEnter(Collider collision)
-    {
-        if(collision.CompareTag("Player"))
-        {
-            player.lives--;
-        }
-    }
+    //private void OnTriggerEnter(Collider collision)
+    //{
+       // if(collision.CompareTag("Player"))
+        //{
+            //player.lives--;
+        //}
+    //}
 }
