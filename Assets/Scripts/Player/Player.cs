@@ -30,7 +30,5 @@ public class Player : MonoBehaviour
         //Ovaj dio kod brine od micanju kamere
         yaw += CameraSensitivity * Input.GetAxis("Mouse X");
         transform.eulerAngles = new Vector3(0.0f, yaw, 0.0f);
-
-
     }
 }

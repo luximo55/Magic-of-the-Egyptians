@@ -1,23 +1,41 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public static GameManager gameManager {get; private set;}
+    public GameObject GameOverPanel;
+    public Player player;
+    public Text livesText;
 
-    public UnitHealth _playerHealth =  new UnitHealth(100, 100);
-    void Awake()
+    private void Start()
     {
-        if (gameManager != null && gameManager != this)
-        {
-            Destroy(this);
-        }
-        else
-        {
-            gameManager = this;
-        }
+        GameOverPanel.SetActive(false);
+        livesText.text = player.lives.ToString();
     }
 
-    
+    private void Update()
+    {
+        livesText.text = player.lives.ToString();
+    }
+
+    public void GameOver()
+    {
+        Time.timeScale = 0;
+        GameOverPanel.SetActive(true);
+    }
+
+    public void TryAgain()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene(1);
+    }
+
+    public void MainMenu()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene(0);
+    }
 }

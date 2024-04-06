@@ -109,8 +109,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24aadd629fefb2846a88121d11f32a0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeToLive: 3
+  timeToLive: 2
   player: {fileID: 0}
+  gameManager: {fileID: 0}
 --- !u!1 &3163416324685135272
 GameObject:
   m_ObjectHideFlags: 0
