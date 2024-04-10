@@ -8,8 +8,8 @@ using UnityEngine;
 public class Projectile : MonoBehaviour
 {
     public float timeToLive = 2f;
-    public Player player;
-    public GameManager gameManager;
+    Player player;
+    GameManager gameManager;
 
     private void Awake()
     {

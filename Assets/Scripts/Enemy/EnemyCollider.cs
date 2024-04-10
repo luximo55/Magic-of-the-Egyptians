@@ -14,6 +14,7 @@ public class EnemyCollider : MonoBehaviour
         if (other.CompareTag("Bullet"))
         {
             enemy.Hit();
+            Destroy(other.gameObject);
         }
     }
 }
