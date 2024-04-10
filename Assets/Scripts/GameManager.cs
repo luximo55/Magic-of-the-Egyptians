@@ -16,11 +16,13 @@ public class GameManager : MonoBehaviour
         livesText.text = player.lives.ToString();
     }
 
+    //Ova funkcija sluzi da azurira tekst zivota igraca
     private void Update()
     {
         livesText.text = player.lives.ToString();
     }
 
+    //Ovo je funkcija koja se pokrece kada igrac izgubi sve zivote
     public void GameOver()
     {
         Time.timeScale = 0;

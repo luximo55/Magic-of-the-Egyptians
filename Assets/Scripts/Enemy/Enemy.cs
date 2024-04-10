@@ -20,6 +20,7 @@ public class Enemy : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
     }
 
+    //Ova funkcija sluzi za skidanje zivota neprijatelju
     public void Hit()
     {
         lives--;
@@ -37,7 +38,6 @@ public class Enemy : MonoBehaviour
         {
             if(Vector3.Distance(this.transform.position, player.position) > 1.2f)
             {
-                //Debug.Log("OnTriggerStay");
                 agent.SetDestination(player.position);
             }
         }

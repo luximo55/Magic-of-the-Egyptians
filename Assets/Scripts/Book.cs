@@ -13,6 +13,7 @@ public class Book : MonoBehaviour
         bookDestroyed.SetActive(false);
     }
 
+    //Ova funkcija sluzi da provjeri je li knjigu pogodio metak
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Bullet"))

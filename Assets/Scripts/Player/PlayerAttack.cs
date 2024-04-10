@@ -6,6 +6,8 @@ public class PlayerAttack : MonoBehaviour
 {
     public Rigidbody shootingProjectile;
     public float force = 10000f;
+
+    //Ova skripta sluzi za ispaljivanje metaka
     void Update()
     {
         if(Input.GetMouseButtonDown(0))

@@ -11,6 +11,7 @@ public class EnemyAttack : MonoBehaviour
     public float shootingInterval = 3f;
     public bool canAttack = true;
     
+    //Ova funkcija provjerava je li se igrac usao u zonu pucanja, ako je ona ispali metak
     private void OnTriggerStay(Collider other)
     {
         if(other.CompareTag("Player"))
@@ -25,6 +26,8 @@ public class EnemyAttack : MonoBehaviour
             }
         }
     }
+
+    //Ova funkcija odreduje je li neprijatelj spreman za pucanje
     private void ChangeAttack()
     {
         canAttack = true;

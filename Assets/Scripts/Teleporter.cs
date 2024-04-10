@@ -9,6 +9,7 @@ public class Teleporter : MonoBehaviour
     public GameObject book;
     public GameObject TeleporterWarning;
 
+    //Ova cijela skripta sluzi za transportiranje igraca medu levelima
     private void Start()
     {
         TeleporterWarning.SetActive(false);

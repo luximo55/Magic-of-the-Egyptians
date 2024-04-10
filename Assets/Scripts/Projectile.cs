@@ -17,11 +17,13 @@ public class Projectile : MonoBehaviour
         gameManager = FindObjectOfType<GameManager>();
     }
 
+    //Ova funkcija sluzi da unisti projektil neprijatelja nakon [timeToLive] sekundi
     private void Start()
     {
         Destroy(this.gameObject, timeToLive);
     }
-    
+
+    //Ova funkcija provjerava je li projektil pogodio igraca te skida zivote igracu
     private void OnTriggerEnter(Collider collision)
     {
         if(collision.CompareTag("Player"))

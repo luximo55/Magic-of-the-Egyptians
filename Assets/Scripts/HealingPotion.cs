@@ -12,6 +12,7 @@ public class HealingPotion : MonoBehaviour
         player = FindObjectOfType<Player>();
     }
 
+    //Provjerava je li igrac usao u trigger napitka
     private void OnTriggerEnter(Collider collision)
     {
         if(collision.CompareTag("Player"))

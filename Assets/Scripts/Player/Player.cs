@@ -17,6 +17,7 @@ public class Player : MonoBehaviour
 
     private void Awake()
     {
+        //Ovaj dio koda zakljucava krusor i sakriva ga
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
