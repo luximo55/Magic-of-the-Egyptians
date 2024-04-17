@@ -12,10 +12,14 @@ public class Enemy : MonoBehaviour
     private Rigidbody rb;
     public float vision = 10.0f;
     public int lives = 3;
-
+    public int index;
+    GameManager gameManager;
+    Enemy enemy;
 
     private void Awake()
     {
+        enemy = GetComponent<Enemy>();
+        gameManager = FindObjectOfType<GameManager>();
         rb = GetComponent<Rigidbody>();
         agent = GetComponent<NavMeshAgent>();
     }
@@ -27,6 +31,8 @@ public class Enemy : MonoBehaviour
 
         if(lives <= 0)
         {
+            index = gameManager.enemies.IndexOf(this.enemy);
+            gameManager.EnemyDie(index);
             Destroy(this.gameObject);
         } 
     }

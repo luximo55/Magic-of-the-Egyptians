@@ -139,7 +139,7 @@ MonoBehaviour:
   speed: 1
   player: {fileID: 0}
   vision: 5
-  lives: 10
+  lives: 5
 --- !u!54 &6542548302065072264
 Rigidbody:
   m_ObjectHideFlags: 0

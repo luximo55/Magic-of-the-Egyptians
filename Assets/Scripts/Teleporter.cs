@@ -1,13 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor.SceneManagement;
 using UnityEngine.SceneManagement;
 
 public class Teleporter : MonoBehaviour
 {
     public GameObject book;
     public GameObject TeleporterWarning;
+    GameManager gameManager;
+
+    private void Awake()
+    {
+        gameManager = FindObjectOfType<GameManager>();
+    }
 
     //Ova cijela skripta sluzi za transportiranje igraca medu levelima
     private void Start()
@@ -21,13 +26,13 @@ public class Teleporter : MonoBehaviour
         {
             if(SceneManager.GetActiveScene().buildIndex != 3)
             {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+                gameManager.LevelEnd();
             }
             else if(SceneManager.GetActiveScene().buildIndex == 3)
             {
                 if(!book)
                 {
-                    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+                    gameManager.LevelEnd();
                 }
                 else 
                 {

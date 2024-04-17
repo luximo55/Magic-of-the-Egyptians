@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEditor;
-using UnityEditor.Build.Content;
 using UnityEngine;
 
 public class Projectile : MonoBehaviour
@@ -28,7 +27,7 @@ public class Projectile : MonoBehaviour
     {
         if(collision.CompareTag("Player"))
         {   
-            player.lives--;
+            player.lives-=5;
             if(player.lives <= 0)
             {   
                 gameManager.GameOver();

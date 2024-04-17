@@ -12,7 +12,7 @@ public class Player : MonoBehaviour
     private Vector3 movedirection;
     public float CameraSensitivity = 2.0f;
     private float yaw = 0.0f;
-    public int lives = 5;
+    public int lives = 100;
     
 
     private void Awake()
