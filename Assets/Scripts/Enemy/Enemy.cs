@@ -49,5 +49,12 @@ public class Enemy : MonoBehaviour
         }
     }
 
+    public void FollowHit()
+    {
+            if(Vector3.Distance(this.transform.position, player.position) > 1.2f)
+            {
+                agent.SetDestination(player.position);
+            }
+    }
     
 }

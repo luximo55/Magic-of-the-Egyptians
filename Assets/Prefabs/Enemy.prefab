@@ -52,7 +52,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 5
+  m_Radius: 7
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &6555435468515119655
 MonoBehaviour:
@@ -68,7 +68,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectile: {fileID: 1374700527357594717, guid: 2f6927104298e624f94036d45cd1b918, type: 3}
   enemy: {fileID: 6300943139704321432}
-  force: 2000
+  force: 1000
   shootingInterval: 2
   canAttack: 1
 --- !u!1 &3963152860067183179
@@ -140,6 +140,7 @@ MonoBehaviour:
   player: {fileID: 0}
   vision: 5
   lives: 5
+  index: 0
 --- !u!54 &6542548302065072264
 Rigidbody:
   m_ObjectHideFlags: 0
