@@ -1,43 +1,16 @@
-Magic of the Egyptians
+Magic of the Egyptians is a game that me and a colleague from my class made together.
 
+Programming and level design: Marin Bogdanović
+Graphic design: Petar Beronić
 
-Uvod: Muzej s primjercima egipatskih mumija putuje svijetom, prezentira način
-sahranjivanja i mumificiranja. U noći dolaska muzejskih stručnjaka (i mumija) u
-Hrvatsku bez njihovog znanja na znameniti i ukleti datum zahvaljujući staroj i
-magičnoj knjizi mumije ožive. U blizini živi naš junak koji će pokušati spriječiti mumije
-da dođu do obližnjeg sela.
+# Idea:
+Our teacher made up the idea for the game, he made the game concept.
 
-Opis: Radnja igre se odvija na šumovitom terenu negdje u Hrvatskoj. Naš junak je
-bivši vojnik koji živi mirnim životom u šumi. Buđenjem mumija naš junak pokušava
-spasiti sebe i obližnje selo. Osim borbe s mumijama kroz igru naš junak mora uništiti
-ukletu knjigu kako bi spriječio mumije u daljnjem pohodu. Kretanjem kroz igru sve
-više mumija napada našeg junaka. Tijekom kretanja kroz igru naš junak će
-napredovati po pitanju naoružanja (prikupljanje boljeg oružja kroz napredak u igri),
-junaka će kroz igru dočekati sigurnosne točke (checkpoint), mogućnost prikupljanja
-metaka (broj metaka je ograničen), razrađeni sustav životnih bodova (junak će imati
-mogućnost regeneracije životnih bodova) za junaka i neprijatelje. Igra će koristiti
-razne vizualne i audio efekte. Dodavanje manje važnih, ali odličnih funkcionalnosti u
-igri (topovi i trampolin, napitak za vraćanje životnih bodova u kriznim situacijama,
-inventorij). Prolazak nivoa igre izvodi se putem portala. Moguća dodatna opcija: Ako
-budemo u mogućnosti, dodati humoristične dijaloge.
-Zamisao je kombinirati moć i magiju, ali da se ne naruši tematika. Mumije i knjiga
-predstavljaju magiju, ali mogu ispucati metke. Naš junak ima moć (oružje, bivši
-vojnik, snaga), ali može koristiti stvorenu magiju od strane neprijatelja (portal).
+# Story:
+On a haunted night, a truck with ancient Egyptian artifacts was parked outside a museum, when suddenly the mummies became sentient. Our hero is an ex-soldier who lives close by so he decided to investigate. When he came close he realized what had happened, he didn't have time to waste, he had to stop them immediately before they came into the village. He has to destroy the magic book that keeps the mummies alive.
 
-Cilj igre: Prolazeći težak put (uništavajući neprijatelje) pronaći i uništiti knjigu kako
-bi se prekinula agonija.
+# Inspiration:
+We were inspired by the original Doom from 1993 and similar games such as Quake and Wolfenstein 3D.
 
-Dob: 8+ (napravili bi igru koja će motivirati naše najmlađe da se u budućnosti
-zainteresiraju za izradu igara)
-
-Platforma: PC
-
-Žanr igre: First Person Shooter (FPS), avantura
-
-Ključna obilježja:
-• Napredak glavnog lika
-• Skupljanje resursa
-• Audio i vizualni efekti
-• Avanturistički svijet
-
-Analiza konkurancije: serijal Doom, Quake i Serious Sam
+# Game production:
+Because of our lack of knowledge in 3D modeling, we decided to use rotating sprites for our models, staying true to our inspirations.
